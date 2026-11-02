@@ -14,7 +14,7 @@ If the Untopple tools aren't available, the connector isn't signed in yet. Ask t
 1. **Read the guide first.** Call `get_guide` before anything else: `start` for a new automation, `workflow` when writing one, `debug` when one is broken. The guide is kept up to date on the server, so follow it over anything you remember.
 2. **Understand before building.** Ask what the person is trying to achieve, not only what they asked for. Write it down in `contract.md`, one section per workflow.
 3. **Research on the pod.** Check what's really possible there, such as which sites answer and what the data looks like, before you write the workflow.
-4. **Build in a draft.** Every change happens in a draft from `start_draft`. Submit it when it works; if the pod has an Approver, a person approves it on the web before it goes live.
+4. **Build in a draft.** Every change happens in a draft from `start_draft`. Submit it when it works: submitting makes it live, so test it first.
 5. **Show the result.** When you start a run, give the person its `watch_url`. Use `show_workflow` and `show_run` to show what you built and what happened, and give them each file's `download_url` when a run makes files they want.
 
 ## Things to keep in mind
