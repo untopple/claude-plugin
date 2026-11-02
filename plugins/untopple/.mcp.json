@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "untopple": {
+      "type": "http",
+      "url": "https://untopple.com/api/mcp"
+    }
+  }
+}

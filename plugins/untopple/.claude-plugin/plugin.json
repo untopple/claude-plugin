@@ -1,0 +1,12 @@
+{
+  "name": "untopple",
+  "version": "0.1.0",
+  "description": "Connect Untopple and build, run and repair automations from Claude.",
+  "author": {
+    "name": "Untopple",
+    "url": "https://untopple.com"
+  },
+  "homepage": "https://untopple.com",
+  "license": "MIT",
+  "keywords": ["automation", "workflows", "mcp"]
+}
