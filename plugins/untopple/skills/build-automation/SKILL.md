@@ -13,12 +13,13 @@ If the Untopple tools aren't available, the connector isn't signed in yet. Ask t
 
 1. **Read the guide first.** Call `get_guide` before anything else: `start` for a new automation, `workflow` when writing one, `debug` when one is broken. The guide is kept up to date on the server, so follow it over anything you remember.
 2. **Understand before building.** Ask what the person is trying to achieve, not only what they asked for. Write it down in `contract.md`, one section per workflow.
-3. **Research on the pod.** Check what's really possible there, such as which sites answer and what the data looks like, before you write the workflow.
+3. **Research, then check on the pod.** Explore with your own tools if you like, but check every source from the pod, because sites treat it differently. When a wrong result would look right, such as a ranking or a search across many sites, do the job once and agree the result with the person before you build; the workflow must then reproduce it.
 4. **Build in a draft.** Every change happens in a draft from `start_draft`. Submit it when it works: submitting makes it live, so test it first.
 5. **Show the result.** When you start a run, give the person its `watch_url`. Use `show_workflow` and `show_run` to show what you built and what happened, and give them each file's `download_url` when a run makes files they want.
 
 ## Things to keep in mind
 
-- Run everything through the Untopple tools. You can use your own web search to find sources, but don't create local files, except downloading a run's view or files to hand to the person when you have a shell.
+- Build the workflow only through the Untopple tools. Local scripts are fine for exploring, but never as the automation itself.
+- Use code wherever a rule is reliable, and a model only for free text no rule reads well. The model reads, code checks its answer and decides.
 - Secrets never pass through you. When a service needs an account, call `request_connection` and give the person its `setup_url`.
 - Leave the pod out of tool calls to use the default pod, unless the person names another.
